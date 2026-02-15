@@ -36,6 +36,30 @@
   --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* ── LANGUAGE TOGGLE ── */
+[data-lang="ko"] .en { display: none !important; }
+[data-lang="en"] .ko { display: none !important; }
+
+.lang-toggle {
+  padding: 0.4rem 1rem;
+  font-family: var(--ff-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  border-radius: 50px;
+  background: transparent;
+  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  transition: var(--transition);
+  margin-left: 0.5rem;
+}
+.lang-toggle:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--clr-accent);
+  color: var(--clr-accent);
+}
+
 /* ── RESET & BASE ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -139,6 +163,18 @@ h1, h2, h3, h4 { line-height: 1.2; }
 .btn-outline:hover {
   background: rgba(255,255,255,0.1);
   border-color: var(--clr-white);
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  background: transparent;
+  color: var(--clr-primary);
+  border-color: var(--clr-border);
+}
+.btn-outline-dark:hover {
+  background: var(--clr-primary);
+  color: var(--clr-white);
+  border-color: var(--clr-primary);
   transform: translateY(-2px);
 }
 
@@ -832,6 +868,28 @@ h1, h2, h3, h4 { line-height: 1.2; }
   color: var(--clr-primary) !important;
 }
 
+.ministry-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.ministry-links a {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--clr-primary);
+  background: rgba(26,54,93,0.06);
+  border-radius: 50px;
+  transition: var(--transition);
+}
+.ministry-links a:hover {
+  background: var(--clr-primary);
+  color: var(--clr-white);
+}
+
 .curriculum-badge {
   margin-top: 2rem;
   padding: 1.25rem 2rem;
@@ -939,6 +997,94 @@ h1, h2, h3, h4 { line-height: 1.2; }
   color: var(--clr-primary-dark);
   transform: scale(1.1);
 }
+
+/* ══════════════════════════════════
+   EVENTS
+   ══════════════════════════════════ */
+.events {
+  background: var(--clr-bg);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.event-card {
+  display: flex;
+  gap: 1.25rem;
+  background: var(--clr-white);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--clr-border);
+  transition: var(--transition);
+}
+.event-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.event-date-badge {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-primary);
+  border-radius: var(--radius-sm);
+  color: var(--clr-white);
+}
+
+.event-month {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--clr-accent);
+}
+
+.event-day {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.event-info h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-primary);
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.event-en {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--clr-text-light);
+}
+
+.event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--clr-text-light);
+}
+
+.event-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.events-grid .animate-on-scroll:nth-child(2) { transition-delay: 0.05s; }
+.events-grid .animate-on-scroll:nth-child(3) { transition-delay: 0.1s; }
+.events-grid .animate-on-scroll:nth-child(4) { transition-delay: 0.15s; }
 
 /* ══════════════════════════════════
    GIVING
@@ -1325,6 +1471,11 @@ h1, h2, h3, h4 { line-height: 1.2; }
     margin-top: 0.5rem;
     text-align: center;
     justify-content: center;
+  }
+  .lang-toggle {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    width: 100%;
   }
 
   .hero-scroll-indicator { display: none; }

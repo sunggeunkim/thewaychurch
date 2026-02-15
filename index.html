@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Way Church | 더웨이교회 - Silicon Valley PCA</title>
-  <meta name="description" content="The Way Church (더웨이교회) - A Presbyterian Church in America (PCA) in Silicon Valley. Clear in the Gospel. 복음에 선명한 교회." />
+  <title>더웨이교회 | The Way Church - Silicon Valley PCA</title>
+  <meta name="description" content="더웨이교회 - 미국장로교회(PCA). 복음에 선명한 교회. Silicon Valley Korean Church." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
@@ -22,13 +22,19 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-menu" id="navMenu">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#pastors" class="nav-link">Pastors</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#ministries" class="nav-link">Ministries</a></li>
-        <li><a href="#sermons" class="nav-link">Sermons</a></li>
-        <li><a href="#giving" class="nav-link">Giving</a></li>
-        <li><a href="#contact" class="nav-link nav-link--cta">Visit Us</a></li>
+        <li><a href="#about" class="nav-link"><span class="ko">교회 소개</span><span class="en">About</span></a></li>
+        <li><a href="#pastors" class="nav-link"><span class="ko">목회자</span><span class="en">Pastors</span></a></li>
+        <li><a href="#services" class="nav-link"><span class="ko">예배 안내</span><span class="en">Services</span></a></li>
+        <li><a href="#ministries" class="nav-link"><span class="ko">사역</span><span class="en">Ministries</span></a></li>
+        <li><a href="#sermons" class="nav-link"><span class="ko">설교</span><span class="en">Sermons</span></a></li>
+        <li><a href="#events" class="nav-link"><span class="ko">행사</span><span class="en">Events</span></a></li>
+        <li><a href="#giving" class="nav-link"><span class="ko">헌금</span><span class="en">Giving</span></a></li>
+        <li><a href="#contact" class="nav-link nav-link--cta"><span class="ko">오시는 길</span><span class="en">Visit Us</span></a></li>
+        <li>
+          <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+            <span class="ko">EN</span><span class="en">KO</span>
+          </button>
+        </li>
       </ul>
     </div>
   </nav>
@@ -38,19 +44,34 @@
     <div class="hero-overlay"></div>
     <div class="hero-particles" id="heroParticles"></div>
     <div class="hero-content">
-      <p class="hero-badge animate-on-scroll">Presbyterian Church in America</p>
+      <p class="hero-badge animate-on-scroll">
+        <span class="ko">미국장로교회 (PCA)</span>
+        <span class="en">Presbyterian Church in America</span>
+      </p>
       <h1 class="hero-title animate-on-scroll">
-        <span class="hero-title-line">The Way Church</span>
-        <span class="hero-title-kr">더웨이교회</span>
+        <span class="hero-title-line ko">더웨이교회</span>
+        <span class="hero-title-line en">The Way Church</span>
+        <span class="hero-title-kr ko">The Way Church</span>
+        <span class="hero-title-kr en">더웨이교회</span>
       </h1>
       <p class="hero-verse animate-on-scroll">
-        <em>"I am the way and the truth and the life."</em>
-        <span class="verse-ref">— John 14:6</span>
+        <em class="ko">"내가 곧 길이요 진리요 생명이니"</em>
+        <em class="en">"I am the way and the truth and the life."</em>
+        <span class="verse-ref">&mdash; <span class="ko">요한복음</span><span class="en">John</span> 14:6</span>
       </p>
-      <p class="hero-tagline animate-on-scroll">복음에 선명한 교회 &middot; Clear in the Gospel</p>
+      <p class="hero-tagline animate-on-scroll">
+        <span class="ko">복음에 선명한 교회</span>
+        <span class="en">Clear in the Gospel</span>
+      </p>
       <div class="hero-actions animate-on-scroll">
-        <a href="#services" class="btn btn-primary">Join Us Sunday</a>
-        <a href="https://www.youtube.com/channel/UCdSE65yjToSlEyLVBR2QHKA" target="_blank" rel="noopener" class="btn btn-outline">Watch Online</a>
+        <a href="#services" class="btn btn-primary">
+          <span class="ko">주일예배 안내</span>
+          <span class="en">Join Us Sunday</span>
+        </a>
+        <a href="https://www.youtube.com/channel/UCdSE65yjToSlEyLVBR2QHKA" target="_blank" rel="noopener" class="btn btn-outline">
+          <span class="ko">온라인 예배</span>
+          <span class="en">Watch Online</span>
+        </a>
       </div>
       <div class="hero-scroll-indicator">
         <span>Scroll</span>
@@ -74,41 +95,68 @@
           <div class="about-stats">
             <div class="stat-card animate-on-scroll">
               <span class="stat-number" data-count="2026">0</span>
-              <span class="stat-label">Serving Since</span>
+              <span class="stat-label">
+                <span class="ko">설립연도</span>
+                <span class="en">Serving Since</span>
+              </span>
             </div>
             <div class="stat-card animate-on-scroll">
               <span class="stat-icon">&#9768;</span>
-              <span class="stat-label">PCA Denomination</span>
+              <span class="stat-label">
+                <span class="ko">미국장로교회</span>
+                <span class="en">PCA Denomination</span>
+              </span>
             </div>
           </div>
         </div>
         <div class="about-content">
-          <span class="section-label animate-on-scroll">About Us</span>
-          <h2 class="section-title animate-on-scroll">A Church Moved by the<br/> Message of the Cross</h2>
+          <span class="section-label animate-on-scroll">
+            <span class="ko">교회 소개</span>
+            <span class="en">About Us</span>
+          </span>
+          <h2 class="section-title animate-on-scroll">
+            <span class="ko">십자가의 복음에<br/>감동하는 교회</span>
+            <span class="en">A Church Moved by the<br/>Message of the Cross</span>
+          </h2>
           <p class="about-text animate-on-scroll">
-            The Way Church (더웨이교회) is a Presbyterian Church in America (PCA) congregation located in the heart of Silicon Valley. Our name comes from Jesus' declaration in John 14:6 &mdash; "I am the way and the truth and the life."
+            <span class="ko">
+              더웨이교회는 실리콘밸리에 위치한 미국장로교회(PCA) 소속 교회입니다. 교회 이름은 요한복음 14장 6절 &mdash; "내가 곧 길이요 진리요 생명이니"에서 비롯되었습니다.
+            </span>
+            <span class="en">
+              The Way Church (더웨이교회) is a Presbyterian Church in America (PCA) congregation located in the heart of Silicon Valley. Our name comes from Jesus' declaration in John 14:6 &mdash; "I am the way and the truth and the life."
+            </span>
           </p>
           <p class="about-text animate-on-scroll">
-            We are a community committed to being <strong>clear in the Gospel (복음에 선명한)</strong>. Through Christ-centered preaching, intergenerational discipleship, and authentic fellowship, we seek to grow together in faith and share the love of Jesus with our neighbors.
+            <span class="ko">
+              우리는 <strong>복음에 선명한</strong> 공동체입니다. 그리스도 중심의 설교, 세대 간 제자훈련, 진실한 교제를 통해 함께 믿음 안에서 성장하고, 이웃에게 예수님의 사랑을 전하고자 합니다.
+            </span>
+            <span class="en">
+              We are a community committed to being <strong>clear in the Gospel</strong>. Through Christ-centered preaching, intergenerational discipleship, and authentic fellowship, we seek to grow together in faith and share the love of Jesus with our neighbors.
+            </span>
           </p>
           <p class="about-text animate-on-scroll">
-            Our vision is to view all of Scripture through the lens of Christ and His redemptive work, building a church that is truly moved by the message of the cross.
+            <span class="ko">
+              성경 전체를 그리스도와 그의 구속 사역의 관점으로 바라보며, 십자가의 복음에 감동하는 교회를 세워가는 것이 우리의 비전입니다.
+            </span>
+            <span class="en">
+              Our vision is to view all of Scripture through the lens of Christ and His redemptive work, building a church that is truly moved by the message of the cross.
+            </span>
           </p>
           <div class="about-features animate-on-scroll">
             <div class="feature">
               <div class="feature-icon">&#10016;</div>
-              <h4>Gospel-Centered</h4>
-              <p>Christ at the center of all we do</p>
+              <h4><span class="ko">복음 중심</span><span class="en">Gospel-Centered</span></h4>
+              <p><span class="ko">모든 것의 중심에 그리스도</span><span class="en">Christ at the center of all we do</span></p>
             </div>
             <div class="feature">
               <div class="feature-icon">&#9829;</div>
-              <h4>Community</h4>
-              <p>Nurturing one another in love</p>
+              <h4><span class="ko">공동체</span><span class="en">Community</span></h4>
+              <p><span class="ko">사랑으로 서로를 양육</span><span class="en">Nurturing one another in love</span></p>
             </div>
             <div class="feature">
               <div class="feature-icon">&#9733;</div>
-              <h4>Next Generation</h4>
-              <p>Investing in future leaders of faith</p>
+              <h4><span class="ko">다음 세대</span><span class="en">Next Generation</span></h4>
+              <p><span class="ko">미래의 믿음의 리더 양성</span><span class="en">Investing in future leaders of faith</span></p>
             </div>
           </div>
         </div>
@@ -120,9 +168,18 @@
   <section class="section pastors" id="pastors">
     <div class="container">
       <div class="section-header text-center animate-on-scroll">
-        <span class="section-label">Leadership</span>
-        <h2 class="section-title">Our Pastoral Team</h2>
-        <p class="section-subtitle">Faithful shepherds guiding our congregation</p>
+        <span class="section-label">
+          <span class="ko">목회자 소개</span>
+          <span class="en">Leadership</span>
+        </span>
+        <h2 class="section-title">
+          <span class="ko">목회자 소개</span>
+          <span class="en">Our Pastoral Team</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="ko">교회를 섬기는 목회자들을 소개합니다</span>
+          <span class="en">Faithful shepherds guiding our congregation</span>
+        </p>
       </div>
       <div class="pastors-grid">
         <!-- Lead Pastor -->
@@ -133,15 +190,24 @@
             </div>
           </div>
           <div class="pastor-info">
-            <span class="pastor-role">Lead Pastor &middot; 담임목사</span>
+            <span class="pastor-role">
+              <span class="ko">담임목사</span>
+              <span class="en">Lead Pastor</span>
+            </span>
             <h3 class="pastor-name">이경렬 <span>Kyungryul Lee</span></h3>
             <div class="pastor-education">
-              <p>Chongshin University &mdash; Theology</p>
-              <p>Chongshin Seminary &mdash; M.Div.</p>
-              <p>Liberty Seminary &mdash; Th.M.</p>
+              <p><span class="ko">총신대학교 신학과</span><span class="en">Chongshin University &mdash; Theology</span></p>
+              <p><span class="ko">총신대학교 신학대학원 (M.Div.)</span><span class="en">Chongshin Seminary &mdash; M.Div.</span></p>
+              <p><span class="ko">Liberty Seminary (Th.M.)</span><span class="en">Liberty Seminary &mdash; Th.M.</span></p>
             </div>
-            <p class="pastor-quote">"A church moved by the message of the cross."</p>
-            <p class="pastor-family">Family: Wife Shin-ae (이신애), two sons</p>
+            <p class="pastor-quote">
+              <span class="ko">"십자가의 복음에 감동하는 교회"</span>
+              <span class="en">"A church moved by the message of the cross."</span>
+            </p>
+            <p class="pastor-family">
+              <span class="ko">가족: 아내 이신애, 아들 둘</span>
+              <span class="en">Family: Wife Shin-ae, two sons</span>
+            </p>
           </div>
         </div>
         <!-- Associate Pastor -->
@@ -152,14 +218,23 @@
             </div>
           </div>
           <div class="pastor-info">
-            <span class="pastor-role">Associate Pastor &middot; 부목사</span>
+            <span class="pastor-role">
+              <span class="ko">부목사</span>
+              <span class="en">Associate Pastor</span>
+            </span>
             <h3 class="pastor-name">장성우 <span>Sung Woo Jang</span></h3>
             <div class="pastor-education">
-              <p>Chongshin University &mdash; Theology</p>
-              <p>Chongshin Seminary &mdash; M.Div.</p>
+              <p><span class="ko">총신대학교 신학과</span><span class="en">Chongshin University &mdash; Theology</span></p>
+              <p><span class="ko">총신대학교 신학대학원 (M.Div.)</span><span class="en">Chongshin Seminary &mdash; M.Div.</span></p>
             </div>
-            <p class="pastor-quote">"True joy comes through understanding the love of Jesus Christ and His crucifixion."</p>
-            <p class="pastor-family">Family: Wife Bo-young (장보영), one son &amp; two daughters</p>
+            <p class="pastor-quote">
+              <span class="ko">"예수 그리스도의 사랑과 십자가를 깨달을 때 참된 기쁨이 옵니다."</span>
+              <span class="en">"True joy comes through understanding the love of Jesus Christ and His crucifixion."</span>
+            </p>
+            <p class="pastor-family">
+              <span class="ko">가족: 아내 장보영, 아들 하나 &amp; 딸 둘</span>
+              <span class="en">Family: Wife Bo-young, one son &amp; two daughters</span>
+            </p>
           </div>
         </div>
         <!-- Youth Minister -->
@@ -170,17 +245,23 @@
             </div>
           </div>
           <div class="pastor-info">
-            <span class="pastor-role">Youth Minister &middot; 전도사</span>
-            <h3 class="pastor-name">Frank Kim <span>프랭크 김</span></h3>
+            <span class="pastor-role">
+              <span class="ko">중고등부 전도사</span>
+              <span class="en">Youth Minister</span>
+            </span>
+            <h3 class="pastor-name">프랭크 김 <span>Frank Kim</span></h3>
             <div class="pastor-education">
               <p>De Anza College &amp; UCLA</p>
               <p>Western Seminary &mdash; 2017</p>
-              <p>Former missionary &mdash; Chiang Mai, Thailand</p>
+              <p><span class="ko">태국 치앙마이 선교사 역임</span><span class="en">Former missionary &mdash; Chiang Mai, Thailand</span></p>
             </div>
-            <p class="pastor-quote">Bay Area native passionate about reaching the next generation since 2010.</p>
+            <p class="pastor-quote">
+              <span class="ko">Bay Area 출신으로 2010년부터 다음 세대 사역에 헌신하고 있습니다.</span>
+              <span class="en">Bay Area native passionate about reaching the next generation since 2010.</span>
+            </p>
           </div>
         </div>
-        <!-- Deacon -->
+        <!-- Children & Young Adults -->
         <div class="pastor-card animate-on-scroll">
           <div class="pastor-image">
             <div class="pastor-placeholder">
@@ -188,13 +269,19 @@
             </div>
           </div>
           <div class="pastor-info">
-            <span class="pastor-role">Children &amp; Young Adults &middot; 전도사</span>
-            <h3 class="pastor-name">Sean Kwon <span>권순환</span></h3>
+            <span class="pastor-role">
+              <span class="ko">유초등부 &amp; 청년부 전도사</span>
+              <span class="en">Children &amp; Young Adults Minister</span>
+            </span>
+            <h3 class="pastor-name">권순환 <span>Sean Kwon</span></h3>
             <div class="pastor-education">
-              <p>Seminary &mdash; M.Div. 2012</p>
-              <p>1.5 generation, converted in early twenties</p>
+              <p><span class="ko">신학대학원 (M.Div. 2012)</span><span class="en">Seminary &mdash; M.Div. 2012</span></p>
+              <p><span class="ko">1.5세대, 이십대 초반 회심</span><span class="en">1.5 generation, converted in early twenties</span></p>
             </div>
-            <p class="pastor-quote">Serving children and young adults with a heart for discipleship.</p>
+            <p class="pastor-quote">
+              <span class="ko">어린이와 청년들을 향한 제자훈련의 마음으로 섬기고 있습니다.</span>
+              <span class="en">Serving children and young adults with a heart for discipleship.</span>
+            </p>
           </div>
         </div>
       </div>
@@ -205,66 +292,75 @@
   <section class="section services" id="services">
     <div class="container">
       <div class="section-header text-center animate-on-scroll">
-        <span class="section-label">Worship</span>
-        <h2 class="section-title">Service Times</h2>
-        <p class="section-subtitle">Join us in worship throughout the week</p>
+        <span class="section-label">
+          <span class="ko">예배</span>
+          <span class="en">Worship</span>
+        </span>
+        <h2 class="section-title">
+          <span class="ko">예배 안내</span>
+          <span class="en">Service Times</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="ko">함께 예배하며 하나님을 만나는 시간</span>
+          <span class="en">Join us in worship throughout the week</span>
+        </p>
       </div>
       <div class="services-grid">
         <div class="service-card service-card--primary animate-on-scroll">
-          <div class="service-day">Sunday</div>
+          <div class="service-day"><span class="ko">주일</span><span class="en">Sunday</span></div>
           <div class="service-icon">&#9768;</div>
-          <h3>Adult Worship</h3>
-          <p class="service-time">11:50 AM</p>
-          <p class="service-location">Main Sanctuary</p>
-          <span class="service-tag">In-Person</span>
+          <h3><span class="ko">성인예배</span><span class="en">Adult Worship</span></h3>
+          <p class="service-time"><span class="ko">오전 11:50</span><span class="en">11:50 AM</span></p>
+          <p class="service-location"><span class="ko">본당</span><span class="en">Main Sanctuary</span></p>
+          <span class="service-tag"><span class="ko">대면예배</span><span class="en">In-Person</span></span>
         </div>
         <div class="service-card animate-on-scroll">
-          <div class="service-day">Sunday</div>
+          <div class="service-day"><span class="ko">주일</span><span class="en">Sunday</span></div>
           <div class="service-icon">&#128118;</div>
-          <h3>Toddler Ministry</h3>
-          <p class="service-time">11:50 AM</p>
-          <p class="service-location">Classroom &middot; Ages 2-5</p>
-          <span class="service-tag">In-Person</span>
+          <h3><span class="ko">영유아부</span><span class="en">Toddler Ministry</span></h3>
+          <p class="service-time"><span class="ko">오전 11:50</span><span class="en">11:50 AM</span></p>
+          <p class="service-location"><span class="ko">교실 &middot; 만 2-5세</span><span class="en">Classroom &middot; Ages 2-5</span></p>
+          <span class="service-tag"><span class="ko">대면예배</span><span class="en">In-Person</span></span>
         </div>
         <div class="service-card animate-on-scroll">
-          <div class="service-day">Sunday</div>
+          <div class="service-day"><span class="ko">주일</span><span class="en">Sunday</span></div>
           <div class="service-icon">&#127775;</div>
-          <h3>Elementary</h3>
-          <p class="service-time">11:50 AM / 12:30 PM</p>
-          <p class="service-location">Classroom &middot; K-5th Grade</p>
-          <span class="service-tag">In-Person</span>
+          <h3><span class="ko">유초등부</span><span class="en">Elementary</span></h3>
+          <p class="service-time"><span class="ko">오전 11:50 / 오후 12:30</span><span class="en">11:50 AM / 12:30 PM</span></p>
+          <p class="service-location"><span class="ko">교실 &middot; K-5학년</span><span class="en">Classroom &middot; K-5th Grade</span></p>
+          <span class="service-tag"><span class="ko">대면예배</span><span class="en">In-Person</span></span>
         </div>
         <div class="service-card animate-on-scroll">
-          <div class="service-day">Sunday</div>
+          <div class="service-day"><span class="ko">주일</span><span class="en">Sunday</span></div>
           <div class="service-icon">&#127919;</div>
-          <h3>Youth Ministry</h3>
-          <p class="service-time">11:05 AM &amp; 1:00 PM</p>
-          <p class="service-location">Classroom &middot; 6-12th Grade</p>
-          <span class="service-tag">In-Person</span>
+          <h3><span class="ko">중고등부</span><span class="en">Youth Ministry</span></h3>
+          <p class="service-time"><span class="ko">오전 11:50 &amp; 오후 1:00</span><span class="en">11:50 AM &amp; 1:00 PM</span></p>
+          <p class="service-location"><span class="ko">교실 &middot; 6-12학년</span><span class="en">Classroom &middot; 6-12th Grade</span></p>
+          <span class="service-tag"><span class="ko">대면예배</span><span class="en">In-Person</span></span>
         </div>
         <div class="service-card animate-on-scroll">
-          <div class="service-day">Wednesday</div>
+          <div class="service-day"><span class="ko">수요일</span><span class="en">Wednesday</span></div>
           <div class="service-icon">&#128214;</div>
-          <h3>Bible Study</h3>
-          <p class="service-time">7:30 PM</p>
-          <p class="service-location">YouTube Livestream</p>
-          <span class="service-tag service-tag--online">Online</span>
+          <h3><span class="ko">수요성경공부</span><span class="en">Bible Study</span></h3>
+          <p class="service-time"><span class="ko">밤 7:30</span><span class="en">7:30 PM</span></p>
+          <p class="service-location"><span class="ko">유튜브 라이브</span><span class="en">YouTube Livestream</span></p>
+          <span class="service-tag service-tag--online"><span class="ko">온라인</span><span class="en">Online</span></span>
         </div>
         <div class="service-card animate-on-scroll">
-          <div class="service-day">Saturday</div>
+          <div class="service-day"><span class="ko">토요일</span><span class="en">Saturday</span></div>
           <div class="service-icon">&#127749;</div>
-          <h3>Dawn Prayer</h3>
-          <p class="service-time">6:00 AM</p>
-          <p class="service-location">Main Sanctuary</p>
-          <span class="service-tag">In-Person</span>
+          <h3><span class="ko">새벽기도</span><span class="en">Dawn Prayer</span></h3>
+          <p class="service-time"><span class="ko">오전 6:00</span><span class="en">6:00 AM</span></p>
+          <p class="service-location"><span class="ko">본당</span><span class="en">Main Sanctuary</span></p>
+          <span class="service-tag"><span class="ko">대면예배</span><span class="en">In-Person</span></span>
         </div>
         <div class="service-card animate-on-scroll">
-          <div class="service-day">Friday</div>
+          <div class="service-day"><span class="ko">금요일</span><span class="en">Friday</span></div>
           <div class="service-icon">&#127759;</div>
-          <h3>Young Adults</h3>
-          <p class="service-time">6:30 PM</p>
-          <p class="service-location">Fellowship Gathering</p>
-          <span class="service-tag">In-Person</span>
+          <h3><span class="ko">청년부 모임</span><span class="en">Young Adults</span></h3>
+          <p class="service-time"><span class="ko">밤 6:30</span><span class="en">6:30 PM</span></p>
+          <p class="service-location"><span class="ko">친교 모임</span><span class="en">Fellowship Gathering</span></p>
+          <span class="service-tag"><span class="ko">대면모임</span><span class="en">In-Person</span></span>
         </div>
       </div>
     </div>
@@ -274,15 +370,24 @@
   <section class="section ministries" id="ministries">
     <div class="container">
       <div class="section-header text-center animate-on-scroll">
-        <span class="section-label">Community</span>
-        <h2 class="section-title">Our Ministries</h2>
-        <p class="section-subtitle">Growing together through every stage of life</p>
+        <span class="section-label">
+          <span class="ko">사역</span>
+          <span class="en">Community</span>
+        </span>
+        <h2 class="section-title">
+          <span class="ko">사역 소개</span>
+          <span class="en">Our Ministries</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="ko">삶의 모든 단계에서 함께 성장합니다</span>
+          <span class="en">Growing together through every stage of life</span>
+        </p>
       </div>
       <div class="ministries-tabs">
         <div class="tab-buttons animate-on-scroll">
-          <button class="tab-btn active" data-tab="nextgen">Next Generation</button>
-          <button class="tab-btn" data-tab="adults">Adults</button>
-          <button class="tab-btn" data-tab="devotional">Devotional</button>
+          <button class="tab-btn active" data-tab="nextgen"><span class="ko">다음 세대</span><span class="en">Next Generation</span></button>
+          <button class="tab-btn" data-tab="adults"><span class="ko">성인 사역</span><span class="en">Adults</span></button>
+          <button class="tab-btn" data-tab="devotional"><span class="ko">영성 훈련</span><span class="en">Devotional</span></button>
         </div>
         <div class="tab-panels">
           <!-- Next Gen -->
@@ -291,30 +396,40 @@
               <div class="ministry-card animate-on-scroll">
                 <div class="ministry-card-accent"></div>
                 <div class="ministry-card-icon">&#128118;</div>
-                <h3>Infant &amp; Toddler Ministry</h3>
-                <p class="ministry-ages">Ages 2&ndash;5</p>
-                <p>Nurturing our youngest with God's love in a safe, caring environment during Sunday worship.</p>
-                <p class="ministry-time">Sundays at 11:50 AM</p>
+                <h3><span class="ko">영유아부</span><span class="en">Infant &amp; Toddler Ministry</span></h3>
+                <p class="ministry-ages"><span class="ko">만 2&ndash;5세</span><span class="en">Ages 2&ndash;5</span></p>
+                <p>
+                  <span class="ko">주일예배 시간 동안 안전하고 따뜻한 환경에서 하나님의 사랑으로 아이들을 양육합니다.</span>
+                  <span class="en">Nurturing our youngest with God's love in a safe, caring environment during Sunday worship.</span>
+                </p>
+                <p class="ministry-time"><span class="ko">주일 오전 11:50</span><span class="en">Sundays at 11:50 AM</span></p>
               </div>
               <div class="ministry-card animate-on-scroll">
                 <div class="ministry-card-accent"></div>
                 <div class="ministry-card-icon">&#127775;</div>
-                <h3>Elementary Ministry</h3>
-                <p class="ministry-ages">K &ndash; 5th Grade</p>
-                <p>Building a biblical foundation through the Gospel Project curriculum, worship, and interactive activities.</p>
-                <p class="ministry-time">Sundays at 11:50 AM &amp; 12:30 PM</p>
+                <h3><span class="ko">유초등부</span><span class="en">Elementary Ministry</span></h3>
+                <p class="ministry-ages"><span class="ko">K &ndash; 5학년</span><span class="en">K &ndash; 5th Grade</span></p>
+                <p>
+                  <span class="ko">Gospel Project 커리큘럼을 통해 예배, 활동과 함께 성경적 기초를 세워갑니다.</span>
+                  <span class="en">Building a biblical foundation through the Gospel Project curriculum, worship, and interactive activities.</span>
+                </p>
+                <p class="ministry-time"><span class="ko">주일 오전 11:50 &amp; 오후 12:30</span><span class="en">Sundays at 11:50 AM &amp; 12:30 PM</span></p>
               </div>
               <div class="ministry-card animate-on-scroll">
                 <div class="ministry-card-accent"></div>
                 <div class="ministry-card-icon">&#127919;</div>
-                <h3>Middle &amp; High School</h3>
-                <p class="ministry-ages">6th &ndash; 12th Grade</p>
-                <p>Small group discipleship and dynamic worship empowering teens to own their faith. Led by Minister Frank Kim.</p>
-                <p class="ministry-time">Sundays at 11:05 AM &amp; 1:00 PM</p>
+                <h3><span class="ko">중고등부</span><span class="en">Middle &amp; High School</span></h3>
+                <p class="ministry-ages"><span class="ko">6 &ndash; 12학년</span><span class="en">6th &ndash; 12th Grade</span></p>
+                <p>
+                  <span class="ko">소그룹 제자훈련과 역동적인 예배를 통해 청소년들이 자신의 믿음을 갖도록 이끕니다. 프랭크 김 전도사가 인도합니다.</span>
+                  <span class="en">Small group discipleship and dynamic worship empowering teens to own their faith. Led by Minister Frank Kim.</span>
+                </p>
+                <p class="ministry-time"><span class="ko">주일 오전 11:50 &amp; 오후 1:00</span><span class="en">Sundays at 11:50 AM &amp; 1:00 PM</span></p>
               </div>
             </div>
             <div class="curriculum-badge animate-on-scroll">
-              <strong>Curriculum:</strong> All next-generation ministries use the <em>Gospel Project</em> &mdash; teaching the Bible as one unified story of God's redemption.
+              <span class="ko"><strong>커리큘럼:</strong> 모든 다음 세대 사역은 <em>Gospel Project</em>를 사용합니다 &mdash; 성경 전체를 하나님의 구속 이야기로 가르칩니다.</span>
+              <span class="en"><strong>Curriculum:</strong> All next-generation ministries use the <em>Gospel Project</em> &mdash; teaching the Bible as one unified story of God's redemption.</span>
             </div>
           </div>
           <!-- Adults -->
@@ -323,30 +438,48 @@
               <div class="ministry-card animate-on-scroll">
                 <div class="ministry-card-accent"></div>
                 <div class="ministry-card-icon">&#128214;</div>
-                <h3>Wednesday Bible Study</h3>
-                <p>In-depth Scripture study streamed live on YouTube for accessible learning and community discussion.</p>
-                <p class="ministry-time">Wednesdays at 7:30 PM &middot; Online</p>
+                <h3><span class="ko">수요성경공부</span><span class="en">Wednesday Bible Study</span></h3>
+                <p>
+                  <span class="ko">유튜브 라이브로 진행되는 깊이 있는 성경공부입니다. 누구나 참여할 수 있습니다.</span>
+                  <span class="en">In-depth Scripture study streamed live on YouTube for accessible learning and community discussion.</span>
+                </p>
+                <p class="ministry-time"><span class="ko">수요일 밤 7:30 &middot; 온라인</span><span class="en">Wednesdays at 7:30 PM &middot; Online</span></p>
+                <div class="ministry-links">
+                  <a href="https://youtube.com/playlist?list=PL5vbhSKLwkdOn8vUN4a-uZGviymuPmt4S" target="_blank" rel="noopener">
+                    <span class="ko">성경공부 영상 보기</span>
+                    <span class="en">Watch Bible Study Playlist</span>
+                  </a>
+                </div>
               </div>
               <div class="ministry-card animate-on-scroll">
                 <div class="ministry-card-accent"></div>
                 <div class="ministry-card-icon">&#127759;</div>
-                <h3>Young Adults Fellowship</h3>
-                <p>A vibrant community for young adults to connect, study the Word, and grow together in faith.</p>
-                <p class="ministry-time">Fridays at 6:30 PM</p>
+                <h3><span class="ko">청년부 모임</span><span class="en">Young Adults Fellowship</span></h3>
+                <p>
+                  <span class="ko">청년들이 함께 교제하며 말씀을 나누고 믿음 안에서 성장하는 활기찬 공동체입니다.</span>
+                  <span class="en">A vibrant community for young adults to connect, study the Word, and grow together in faith.</span>
+                </p>
+                <p class="ministry-time"><span class="ko">금요일 밤 6:30</span><span class="en">Fridays at 6:30 PM</span></p>
               </div>
               <div class="ministry-card animate-on-scroll">
                 <div class="ministry-card-accent"></div>
                 <div class="ministry-card-icon">&#128105;</div>
-                <h3>Women's Fellowship</h3>
-                <p>Women's QT sharing groups and fellowship for encouragement, prayer, and spiritual growth.</p>
+                <h3><span class="ko">여성 큐티나눔방</span><span class="en">Women's Fellowship</span></h3>
+                <p>
+                  <span class="ko">여성들이 함께 큐티를 나누며 격려와 기도, 영적 성장을 위한 교제 모임입니다.</span>
+                  <span class="en">Women's QT sharing groups and fellowship for encouragement, prayer, and spiritual growth.</span>
+                </p>
                 <p class="ministry-time">여성 큐티나눔방</p>
               </div>
               <div class="ministry-card animate-on-scroll">
                 <div class="ministry-card-accent"></div>
                 <div class="ministry-card-icon">&#128587;</div>
-                <h3>Men's Ministry</h3>
-                <p>Fellowship activities including hiking, coffee meetups, and spiritual encouragement for men.</p>
-                <p class="ministry-time">Special Events</p>
+                <h3><span class="ko">남성 사역</span><span class="en">Men's Ministry</span></h3>
+                <p>
+                  <span class="ko">하이킹, 커피 모임 등 다양한 활동을 통해 남성 성도들이 교제하고 격려하는 사역입니다.</span>
+                  <span class="en">Fellowship activities including hiking, coffee meetups, and spiritual encouragement for men.</span>
+                </p>
+                <p class="ministry-time"><span class="ko">특별 행사</span><span class="en">Special Events</span></p>
               </div>
             </div>
           </div>
@@ -356,23 +489,42 @@
               <div class="ministry-card animate-on-scroll">
                 <div class="ministry-card-accent"></div>
                 <div class="ministry-card-icon">&#127749;</div>
-                <h3>Saturday Dawn Prayer</h3>
-                <p>Start the weekend in God's presence with early morning prayer in the main sanctuary.</p>
-                <p class="ministry-time">Saturdays at 6:00 AM</p>
+                <h3><span class="ko">토요새벽기도</span><span class="en">Saturday Dawn Prayer</span></h3>
+                <p>
+                  <span class="ko">본당에서 드리는 새벽기도로 하나님의 임재 가운데 주말을 시작합니다.</span>
+                  <span class="en">Start the weekend in God's presence with early morning prayer in the main sanctuary.</span>
+                </p>
+                <p class="ministry-time"><span class="ko">토요일 오전 6:00</span><span class="en">Saturdays at 6:00 AM</span></p>
               </div>
               <div class="ministry-card animate-on-scroll">
                 <div class="ministry-card-accent"></div>
                 <div class="ministry-card-icon">&#128216;</div>
-                <h3>Daily Quiet Time (큐티)</h3>
-                <p>Daily Scripture meditation through 매일성경큐티 (Daily Bible QT) resources and community sharing via the Band app.</p>
-                <p class="ministry-time">Daily &middot; 더웨이 큐티마을</p>
+                <h3><span class="ko">매일 큐티 (QT)</span><span class="en">Daily Quiet Time (QT)</span></h3>
+                <p>
+                  <span class="ko">매일성경큐티 자료를 통한 말씀 묵상과 Band 앱을 통한 큐티 나눔 공동체입니다.</span>
+                  <span class="en">Daily Scripture meditation through Daily Bible QT resources and community sharing via the Band app.</span>
+                </p>
+                <p class="ministry-time"><span class="ko">매일 &middot; 더웨이 큐티마을</span><span class="en">Daily &middot; The Way QT Village</span></p>
+                <div class="ministry-links">
+                  <a href="https://sum.su.or.kr:8888/bible/today" target="_blank" rel="noopener">
+                    <span class="ko">매일성경큐티</span>
+                    <span class="en">Daily Bible QT</span>
+                  </a>
+                  <a href="https://band.us/n/a5a906BaAcSdH" target="_blank" rel="noopener">
+                    <span class="ko">큐티마을 (Band)</span>
+                    <span class="en">QT Community (Band)</span>
+                  </a>
+                </div>
               </div>
               <div class="ministry-card animate-on-scroll">
                 <div class="ministry-card-accent"></div>
                 <div class="ministry-card-icon">&#127891;</div>
-                <h3>Disciple Training</h3>
-                <p>Intentional discipleship programs to deepen your walk with Christ and equip you for ministry.</p>
-                <p class="ministry-time">Ongoing</p>
+                <h3><span class="ko">제자훈련</span><span class="en">Disciple Training</span></h3>
+                <p>
+                  <span class="ko">그리스도와의 동행을 깊게 하고 사역을 위해 준비하는 제자훈련 프로그램입니다.</span>
+                  <span class="en">Intentional discipleship programs to deepen your walk with Christ and equip you for ministry.</span>
+                </p>
+                <p class="ministry-time"><span class="ko">상시 진행</span><span class="en">Ongoing</span></p>
               </div>
             </div>
           </div>
@@ -385,98 +537,182 @@
   <section class="section sermons" id="sermons">
     <div class="container">
       <div class="section-header text-center animate-on-scroll">
-        <span class="section-label">Messages</span>
-        <h2 class="section-title">Recent Sermons</h2>
-        <p class="section-subtitle">Be encouraged by the Word of God</p>
+        <span class="section-label">
+          <span class="ko">말씀</span>
+          <span class="en">Messages</span>
+        </span>
+        <h2 class="section-title">
+          <span class="ko">주일설교</span>
+          <span class="en">Recent Sermons</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="ko">하나님의 말씀으로 은혜를 나눕니다</span>
+          <span class="en">Be encouraged by the Word of God</span>
+        </p>
       </div>
       <div class="sermons-grid">
         <div class="sermon-card animate-on-scroll">
           <div class="sermon-date">
-            <span class="sermon-month">Feb</span>
+            <span class="sermon-month">2월</span>
             <span class="sermon-day-num">08</span>
           </div>
           <div class="sermon-content">
             <h3>용서받고 용서할 수 있는 특권이 있음을 잊지 말아야 합니다</h3>
-            <p class="sermon-translation">Don't forget the privilege of receiving and extending forgiveness</p>
-            <span class="sermon-speaker">Pastor Kyungryul Lee &middot; 이경렬 목사</span>
+            <span class="sermon-speaker">이경렬 목사</span>
           </div>
-          <a href="https://youtu.be/0894G6WM-_c" target="_blank" rel="noopener" class="sermon-watch" aria-label="Watch sermon">
+          <a href="https://youtu.be/0894G6WM-_c" target="_blank" rel="noopener" class="sermon-watch" aria-label="설교 보기">
             <svg viewBox="0 0 24 24" width="24" height="24"><polygon points="5,3 19,12 5,21" fill="currentColor"/></svg>
           </a>
         </div>
         <div class="sermon-card animate-on-scroll">
           <div class="sermon-date">
-            <span class="sermon-month">Feb</span>
+            <span class="sermon-month">2월</span>
             <span class="sermon-day-num">01</span>
           </div>
           <div class="sermon-content">
             <h3>먼지에서 생령으로</h3>
-            <p class="sermon-translation">From dust to living spirit</p>
-            <span class="sermon-speaker">Pastor Sung Woo Jang &middot; 장성우 목사</span>
+            <span class="sermon-speaker">장성우 목사</span>
           </div>
-          <a href="https://youtu.be/FB3yQ6wpQMg" target="_blank" rel="noopener" class="sermon-watch" aria-label="Watch sermon">
+          <a href="https://youtu.be/FB3yQ6wpQMg" target="_blank" rel="noopener" class="sermon-watch" aria-label="설교 보기">
             <svg viewBox="0 0 24 24" width="24" height="24"><polygon points="5,3 19,12 5,21" fill="currentColor"/></svg>
           </a>
         </div>
         <div class="sermon-card animate-on-scroll">
           <div class="sermon-date">
-            <span class="sermon-month">Jan</span>
+            <span class="sermon-month">1월</span>
             <span class="sermon-day-num">25</span>
           </div>
           <div class="sermon-content">
             <h3>나의 필요를 구할 수 있는 특권이 있습니다</h3>
-            <p class="sermon-translation">The privilege to petition for our needs</p>
-            <span class="sermon-speaker">Pastor Kyungryul Lee &middot; 이경렬 목사</span>
+            <span class="sermon-speaker">이경렬 목사</span>
           </div>
-          <a href="https://youtu.be/WlZs87lGQ84" target="_blank" rel="noopener" class="sermon-watch" aria-label="Watch sermon">
+          <a href="https://youtu.be/WlZs87lGQ84" target="_blank" rel="noopener" class="sermon-watch" aria-label="설교 보기">
             <svg viewBox="0 0 24 24" width="24" height="24"><polygon points="5,3 19,12 5,21" fill="currentColor"/></svg>
           </a>
         </div>
         <div class="sermon-card animate-on-scroll">
           <div class="sermon-date">
-            <span class="sermon-month">Jan</span>
+            <span class="sermon-month">1월</span>
             <span class="sermon-day-num">18</span>
           </div>
           <div class="sermon-content">
             <h3>하나님의 뜻을 신뢰해야 함을 잊지 마세요</h3>
-            <p class="sermon-translation">Don't forget to trust God's will</p>
-            <span class="sermon-speaker">Pastor Kyungryul Lee &middot; 이경렬 목사</span>
+            <span class="sermon-speaker">이경렬 목사</span>
           </div>
-          <a href="https://youtu.be/y-sXIdzDQKs" target="_blank" rel="noopener" class="sermon-watch" aria-label="Watch sermon">
+          <a href="https://youtu.be/y-sXIdzDQKs" target="_blank" rel="noopener" class="sermon-watch" aria-label="설교 보기">
             <svg viewBox="0 0 24 24" width="24" height="24"><polygon points="5,3 19,12 5,21" fill="currentColor"/></svg>
           </a>
         </div>
         <div class="sermon-card animate-on-scroll">
           <div class="sermon-date">
-            <span class="sermon-month">Jan</span>
+            <span class="sermon-month">1월</span>
             <span class="sermon-day-num">11</span>
           </div>
           <div class="sermon-content">
             <h3>한 사람이 또 한 사람을</h3>
-            <p class="sermon-translation">One person to another</p>
-            <span class="sermon-speaker">Pastor Sung Woo Jang &middot; 장성우 목사</span>
+            <span class="sermon-speaker">장성우 목사</span>
           </div>
-          <a href="https://youtu.be/uQb9TsDXtcc" target="_blank" rel="noopener" class="sermon-watch" aria-label="Watch sermon">
+          <a href="https://youtu.be/uQb9TsDXtcc" target="_blank" rel="noopener" class="sermon-watch" aria-label="설교 보기">
             <svg viewBox="0 0 24 24" width="24" height="24"><polygon points="5,3 19,12 5,21" fill="currentColor"/></svg>
           </a>
         </div>
         <div class="sermon-card animate-on-scroll">
           <div class="sermon-date">
-            <span class="sermon-month">Jan</span>
+            <span class="sermon-month">1월</span>
             <span class="sermon-day-num">04</span>
           </div>
           <div class="sermon-content">
             <h3>서로를 양육하는 공동체</h3>
-            <p class="sermon-translation">A community nurturing one another</p>
-            <span class="sermon-speaker">Pastor Kyungryul Lee &middot; 이경렬 목사</span>
+            <span class="sermon-speaker">이경렬 목사</span>
           </div>
-          <a href="https://youtu.be/B9sN3decwlo" target="_blank" rel="noopener" class="sermon-watch" aria-label="Watch sermon">
+          <a href="https://youtu.be/B9sN3decwlo" target="_blank" rel="noopener" class="sermon-watch" aria-label="설교 보기">
             <svg viewBox="0 0 24 24" width="24" height="24"><polygon points="5,3 19,12 5,21" fill="currentColor"/></svg>
           </a>
         </div>
       </div>
       <div class="text-center animate-on-scroll" style="margin-top: 3rem;">
-        <a href="https://www.youtube.com/channel/UCdSE65yjToSlEyLVBR2QHKA" target="_blank" rel="noopener" class="btn btn-primary">View All Sermons on YouTube</a>
+        <a href="https://www.youtube.com/channel/UCdSE65yjToSlEyLVBR2QHKA" target="_blank" rel="noopener" class="btn btn-primary">
+          <span class="ko">전체 설교 보기</span>
+          <span class="en">View All Sermons on YouTube</span>
+        </a>
+        <a href="https://www.youtube.com/playlist?list=PL5vbhSKLwkdM9lh2TGZAtH6pJTzEbm1Uj" target="_blank" rel="noopener" class="btn btn-outline-dark">
+          <span class="ko">주일찬양 영상</span>
+          <span class="en">Sunday Worship Playlist</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ EVENTS ═══════════════ -->
+  <section class="section events" id="events">
+    <div class="container">
+      <div class="section-header text-center animate-on-scroll">
+        <span class="section-label">
+          <span class="ko">소식</span>
+          <span class="en">What's Happening</span>
+        </span>
+        <h2 class="section-title">
+          <span class="ko">다가오는 행사</span>
+          <span class="en">Upcoming Events</span>
+        </h2>
+        <p class="section-subtitle">
+          <span class="ko">교제와 섬김의 자리에 함께해 주세요</span>
+          <span class="en">Join us for fellowship and community</span>
+        </p>
+      </div>
+      <div class="events-grid">
+        <div class="event-card animate-on-scroll">
+          <div class="event-date-badge">
+            <span class="event-month">2월</span>
+            <span class="event-day">28</span>
+          </div>
+          <div class="event-info">
+            <h3>중고등부 아가페 밀</h3>
+            <div class="event-meta">
+              <span><span class="ko">오후 5:00</span><span class="en">5:00 PM</span></span>
+              <span><span class="ko">중고등부</span><span class="en">Youth Ministry</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="event-card animate-on-scroll">
+          <div class="event-date-badge">
+            <span class="event-month">3월</span>
+            <span class="event-day">07</span>
+          </div>
+          <div class="event-info">
+            <h3>남자성도 하이킹 &amp; 커피</h3>
+            <div class="event-meta">
+              <span><span class="ko">오전 7:00</span><span class="en">7:00 AM</span></span>
+              <span>Russian Ridge Preserve</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-card animate-on-scroll">
+          <div class="event-date-badge">
+            <span class="event-month">3월</span>
+            <span class="event-day">15</span>
+          </div>
+          <div class="event-info">
+            <h3>선교기금마련 옷 바자회</h3>
+            <div class="event-meta">
+              <span><span class="ko">오후 1:30</span><span class="en">1:30 PM</span></span>
+              <span><span class="ko">선교</span><span class="en">Missions</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="event-card animate-on-scroll">
+          <div class="event-date-badge">
+            <span class="event-month">3월</span>
+            <span class="event-day">29</span>
+          </div>
+          <div class="event-info">
+            <h3>부모세미나</h3>
+            <div class="event-meta">
+              <span><span class="ko">다음 세대</span><span class="en">Next Generation</span></span>
+              <span><span class="ko">모든 부모님 환영</span><span class="en">All Parents Welcome</span></span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -486,46 +722,70 @@
     <div class="container">
       <div class="giving-layout">
         <div class="giving-intro animate-on-scroll">
-          <span class="section-label">Generosity</span>
-          <h2 class="section-title">Give</h2>
-          <p>Your generous giving supports the mission and ministries of The Way Church. We are a 501(c)(3) registered nonprofit, and tax receipts are issued annually.</p>
+          <span class="section-label">
+            <span class="ko">헌금</span>
+            <span class="en">Generosity</span>
+          </span>
+          <h2 class="section-title">
+            <span class="ko">헌금 안내</span>
+            <span class="en">Give</span>
+          </h2>
+          <p>
+            <span class="ko">여러분의 헌금은 더웨이교회의 선교와 사역을 지원합니다. 501(c)(3) 비영리법인으로 등록되어 있으며, 연말 세금 영수증이 발행됩니다.</span>
+            <span class="en">Your generous giving supports the mission and ministries of The Way Church. We are a 501(c)(3) registered nonprofit, and tax receipts are issued annually.</span>
+          </p>
           <div class="giving-categories">
-            <span class="giving-cat">Tithe</span>
-            <span class="giving-cat">General Offering</span>
-            <span class="giving-cat">Mission</span>
-            <span class="giving-cat">Thanksgiving</span>
-            <span class="giving-cat">Designated</span>
+            <span class="giving-cat"><span class="ko">십일조</span><span class="en">Tithe</span></span>
+            <span class="giving-cat"><span class="ko">감사헌금</span><span class="en">Thanksgiving</span></span>
+            <span class="giving-cat"><span class="ko">선교헌금</span><span class="en">Mission</span></span>
+            <span class="giving-cat"><span class="ko">일반헌금</span><span class="en">General</span></span>
+            <span class="giving-cat"><span class="ko">지정헌금</span><span class="en">Designated</span></span>
           </div>
         </div>
         <div class="giving-methods">
           <div class="giving-card giving-card--zelle animate-on-scroll">
             <div class="giving-card-header">
               <h3>Zelle</h3>
-              <span class="giving-recommended">Recommended</span>
+              <span class="giving-recommended"><span class="ko">추천</span><span class="en">Recommended</span></span>
             </div>
-            <p>Send via your bank's Zelle feature. No transaction fees.</p>
+            <p>
+              <span class="ko">은행 앱의 Zelle 기능으로 송금하세요. 수수료가 없습니다.</span>
+              <span class="en">Send via your bank's Zelle feature. No transaction fees.</span>
+            </p>
             <div class="giving-detail">
               <strong>Email:</strong>
               <code>offering@thewaychurchsv.org</code>
             </div>
-            <p class="giving-note">Include your name and offering type in the memo (e.g., "Tithe by John Smith")</p>
+            <p class="giving-note">
+              <span class="ko">메모에 이름과 헌금 종류를 기입해 주세요 (예: "십일조 홍길동")</span>
+              <span class="en">Include your name and offering type in the memo (e.g., "Tithe by John Smith")</span>
+            </p>
           </div>
           <div class="giving-card animate-on-scroll">
             <div class="giving-card-header">
-              <h3>Check</h3>
+              <h3><span class="ko">수표 (Check)</span><span class="en">Check</span></h3>
             </div>
-            <p>Make checks payable to <strong>"The Way Church"</strong></p>
+            <p>
+              <span class="ko">수표 수취인: <strong>"The Way Church"</strong></span>
+              <span class="en">Make checks payable to <strong>"The Way Church"</strong></span>
+            </p>
             <div class="giving-detail">
-              <strong>Mail to:</strong>
+              <strong><span class="ko">보내실 곳:</span><span class="en">Mail to:</span></strong>
               <span>The Way Church<br/>1715 Grant Rd<br/>Los Altos, CA 94024</span>
             </div>
-            <p class="giving-note">Include offering type in memo. Text <a href="tel:4085048920">408-504-8920</a> to confirm receipt.</p>
+            <p class="giving-note">
+              <span class="ko">메모에 헌금 종류를 기입해 주세요. 수령 확인은 <a href="tel:4085048920">408-504-8920</a>으로 문자해 주세요.</span>
+              <span class="en">Include offering type in memo. Text <a href="tel:4085048920">408-504-8920</a> to confirm receipt.</span>
+            </p>
           </div>
           <div class="giving-card animate-on-scroll">
             <div class="giving-card-header">
-              <h3>In Person</h3>
+              <h3><span class="ko">현장 헌금</span><span class="en">In Person</span></h3>
             </div>
-            <p>Donation boxes are available in the church lobby during Sunday services.</p>
+            <p>
+              <span class="ko">주일예배 시 로비에 비치된 헌금함을 이용해 주세요.</span>
+              <span class="en">Donation boxes are available in the church lobby during Sunday services.</span>
+            </p>
           </div>
         </div>
       </div>
@@ -537,16 +797,25 @@
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info animate-on-scroll">
-          <span class="section-label">Visit Us</span>
-          <h2 class="section-title">We'd Love to<br/>Meet You</h2>
-          <p>The Way Church meets at Immanuel Lutheran Church. All are welcome to join us for worship and fellowship.</p>
+          <span class="section-label">
+            <span class="ko">오시는 길</span>
+            <span class="en">Visit Us</span>
+          </span>
+          <h2 class="section-title">
+            <span class="ko">교회로<br/>오시는 길</span>
+            <span class="en">We'd Love to<br/>Meet You</span>
+          </h2>
+          <p>
+            <span class="ko">더웨이교회는 Immanuel Lutheran Church에서 예배드리고 있습니다. 누구든지 환영합니다.</span>
+            <span class="en">The Way Church meets at Immanuel Lutheran Church. All are welcome to join us for worship and fellowship.</span>
+          </p>
           <div class="contact-details">
             <div class="contact-item">
               <div class="contact-icon">
                 <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor"/></svg>
               </div>
               <div>
-                <strong>Address</strong>
+                <strong><span class="ko">주소</span><span class="en">Address</span></strong>
                 <p>1715 Grant Rd<br/>Los Altos, CA 94024</p>
               </div>
             </div>
@@ -555,7 +824,7 @@
                 <svg viewBox="0 0 24 24" width="24" height="24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg>
               </div>
               <div>
-                <strong>Email</strong>
+                <strong><span class="ko">이메일</span><span class="en">Email</span></strong>
                 <p><a href="mailto:thewaychurch.sv@gmail.com">thewaychurch.sv@gmail.com</a></p>
               </div>
             </div>
@@ -564,7 +833,7 @@
                 <svg viewBox="0 0 24 24" width="24" height="24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/></svg>
               </div>
               <div>
-                <strong>Phone</strong>
+                <strong><span class="ko">전화</span><span class="en">Phone</span></strong>
                 <p><a href="tel:4085048920">408-504-8920</a></p>
               </div>
             </div>
@@ -583,7 +852,7 @@
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.0!2d-122.1!3d37.38!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb1156e1f0f0f%3A0x7c1c0f0f0f0f0f0f!2s1715+Grant+Rd%2C+Los+Altos%2C+CA+94024!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
             width="100%" height="100%" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            title="The Way Church Location">
+            title="더웨이교회 위치">
           </iframe>
         </div>
       </div>
@@ -595,36 +864,44 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>The Way Church <span class="footer-kr">더웨이교회</span></h3>
-          <p>A Presbyterian Church in America (PCA) congregation in Silicon Valley.</p>
-          <p class="footer-verse"><em>"I am the way and the truth and the life."</em> &mdash; John 14:6</p>
+          <h3>더웨이교회 <span class="footer-kr">The Way Church</span></h3>
+          <p>
+            <span class="ko">실리콘밸리 미국장로교회(PCA) 소속 교회</span>
+            <span class="en">A Presbyterian Church in America (PCA) in Silicon Valley</span>
+          </p>
+          <p class="footer-verse">
+            <em class="ko">"내가 곧 길이요 진리요 생명이니"</em>
+            <em class="en">"I am the way and the truth and the life."</em>
+            &mdash; <span class="ko">요한복음</span><span class="en">John</span> 14:6
+          </p>
         </div>
         <div class="footer-links">
-          <h4>Quick Links</h4>
+          <h4><span class="ko">바로가기</span><span class="en">Quick Links</span></h4>
           <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#pastors">Pastors</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#ministries">Ministries</a></li>
-            <li><a href="#sermons">Sermons</a></li>
-            <li><a href="#giving">Give</a></li>
+            <li><a href="#about"><span class="ko">교회 소개</span><span class="en">About</span></a></li>
+            <li><a href="#pastors"><span class="ko">목회자</span><span class="en">Pastors</span></a></li>
+            <li><a href="#services"><span class="ko">예배 안내</span><span class="en">Services</span></a></li>
+            <li><a href="#ministries"><span class="ko">사역</span><span class="en">Ministries</span></a></li>
+            <li><a href="#sermons"><span class="ko">설교</span><span class="en">Sermons</span></a></li>
+            <li><a href="#events"><span class="ko">행사</span><span class="en">Events</span></a></li>
+            <li><a href="#giving"><span class="ko">헌금</span><span class="en">Give</span></a></li>
           </ul>
         </div>
         <div class="footer-contact">
-          <h4>Contact</h4>
+          <h4><span class="ko">연락처</span><span class="en">Contact</span></h4>
           <p>1715 Grant Rd<br/>Los Altos, CA 94024</p>
           <p><a href="mailto:thewaychurch.sv@gmail.com">thewaychurch.sv@gmail.com</a></p>
           <p><a href="tel:4085048920">408-504-8920</a></p>
         </div>
         <div class="footer-service">
-          <h4>Join Us</h4>
-          <p>Sunday Worship: 11:50 AM</p>
-          <p>Wednesday Bible Study: 7:30 PM</p>
-          <p>Saturday Prayer: 6:00 AM</p>
+          <h4><span class="ko">예배 시간</span><span class="en">Join Us</span></h4>
+          <p><span class="ko">주일예배: 오전 11:50</span><span class="en">Sunday Worship: 11:50 AM</span></p>
+          <p><span class="ko">수요성경공부: 밤 7:30</span><span class="en">Wednesday Bible Study: 7:30 PM</span></p>
+          <p><span class="ko">토요새벽기도: 오전 6:00</span><span class="en">Saturday Prayer: 6:00 AM</span></p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 The Way Church (더웨이교회). All rights reserved.</p>
+        <p>&copy; 2026 더웨이교회 (The Way Church). All rights reserved.</p>
       </div>
     </div>
   </footer>

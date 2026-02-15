@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroParticles();
   initSmoothScroll();
   initActiveNavHighlight();
+  initLanguageToggle();
 });
 
 /* ── NAVBAR SCROLL EFFECT ── */
@@ -158,4 +159,23 @@ function initActiveNavHighlight() {
   });
 
   sections.forEach(section => observer.observe(section));
+}
+
+/* ── LANGUAGE TOGGLE ── */
+function initLanguageToggle() {
+  const toggle = document.getElementById('langToggle');
+  if (!toggle) return;
+
+  // Restore saved preference (default: ko)
+  const saved = localStorage.getItem('twc-lang') || 'ko';
+  document.documentElement.setAttribute('data-lang', saved);
+  document.documentElement.setAttribute('lang', saved);
+
+  toggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-lang');
+    const next = current === 'ko' ? 'en' : 'ko';
+    document.documentElement.setAttribute('data-lang', next);
+    document.documentElement.setAttribute('lang', next);
+    localStorage.setItem('twc-lang', next);
+  });
 }
